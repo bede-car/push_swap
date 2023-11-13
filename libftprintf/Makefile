@@ -36,7 +36,7 @@ all : $(NAME)
 $(NAME) : ${OBJS} 
 	$(MAKE) bonus -C ./libft 
 	mv ./libft/libft.a $(NAME)
-	ar -rc ${NAME} $^
+	ar -rcs ${NAME} $^
 
 clean :
 	rm -f ${OBJS} 
